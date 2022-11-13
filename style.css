@@ -1,0 +1,131 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+
+#menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin :0 auto;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+    background: linear-gradient(#3899d7,#d38409);
+    
+}
+
+#menu .title{
+    width: 100%;
+    font-size: 64px;
+    color: yellowgreen;
+    margin-bottom: 10px;
+    text-shadow: 1px 2px 3px black;
+}
+#menu .menu-btn{
+    width: 250px;
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 18px;
+    border: none;
+    background-color: #8cc811;
+    color: #73f6b7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px black;
+}
+
+.game-menu{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #3899d7;
+    display: none;
+}
+
+.icon-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    gap: 40px;
+   
+}
+.icon-btn .item-btn{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-size: 70px;
+    padding: 15px;
+    cursor: pointer;
+    color: #73f6b7;
+    background-color: #8cc811;
+    border: none;
+    border-radius: 6px;
+}
+
+.clear-btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 18px;
+    background-color: red;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    box-shadow: 1px 2px 3px black;
+    transition: 300ms;
+}
+.close-icon{
+    position: absolute;
+    color: red;
+    padding: 5px;
+    background-color: black;
+    right: 0;
+    top: 0;
+}
+.close-icon i{
+    font-size: 30px;
+}
+
+.clear-btn:hover,
+.close-icon:hover,
+.item-btn:hover{
+    box-shadow: 2px 4px 6px black;
+    opacity: 0.7;
+}
+
+#you-win,
+#you-losse,
+#no-winner{
+    text-transform: uppercase;
+    position: absolute;
+    top: 28%;
+    left: 47%;
+    transform: translate(-30%, -50%);
+    font-size: 40px;
+    color: orangered;
+    text-shadow: 2px 4px 6px black;
+    transition: 500ms;
+    display: none;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="menu">
+        <div>
+            <h1 class="title">Welcome</h1>
+           <button class="menu-btn" onclick="startGame()">Play</button>
+        </div>
+    </section>
+    <div class="game-menu" id="game-menu">
+        <div class="scores">
+            <div>
+                <span>Wins-</span><span id="win-score">0</span>
+            </div>
+            <div><span>Losses-</span><span id="losse-score">0</span></div>
+        </div>
+        <div class="win-title">
+            <p id="you-win">YOU WIN</p>
+        </div>
+        <div>
+            <p id="you-losse">YOU LOSE</p>
+        </div>
+        <div>
+            <p id="no-winner">equality</p>
+        </div>
+        <button class="close-icon" id="close-icon" onclick="closeGame()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="icon-btn">
+            <button class="item-btn" id="scissors" onclick="scissorsChoice()"><i class="fa-solid fa-hand-scissors"></i></button>
+            <button class="item-btn" id="papper" onclick="papperChoice()"><i class="fa-solid fa-hand"></i></button>
+            <button class="item-btn" id="rock" onclick="rockChoice()"><i class="fa-solid fa-hand-back-fist"></i></button>
+        </div>
+        <button class="clear-btn" onclick="clearStats()">Clear stats</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
